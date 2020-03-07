@@ -1,3 +1,4 @@
+@auth
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <h3>Edit employees</h3>
         <form action="{{ url('updateEmployeesProses')}}" method="POST">
@@ -30,4 +31,11 @@
                 <button type="submit" class="btn btn-danger" value="Edit">Edit</button>
             </div>
         </form>
+        
+        @endauth
+	
+
+@guest 
+Anda harus login
+@endguest 
    
