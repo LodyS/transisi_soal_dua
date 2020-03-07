@@ -1,0 +1,7 @@
+Soal nomor 2
+
+Bisa login terlebih dahulu ke menu login dengan email : admin@transisi.co.id password : transisi
+
+terima kasih atas perhatiannya
+
+tambahan informasi : Menggunakan Laravel versi 5.8
