@@ -1,3 +1,4 @@
+@auth
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 <table class="table table-hover">
 	<tr>
@@ -19,3 +20,10 @@
 		
 		
 		{{ $companies->links() }}
+        
+  @endauth
+	
+
+@guest 
+Anda harus login
+@endguest 
