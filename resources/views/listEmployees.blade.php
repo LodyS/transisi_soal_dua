@@ -1,3 +1,4 @@
+@auth
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 <h2>List Employees</h2>
 <table class="table table-hover">
@@ -20,3 +21,10 @@
 	
 	
 	{{ $employees->links() }}
+    
+    @endauth
+	
+
+@guest 
+Anda harus login
+@endguest 
