@@ -1,3 +1,5 @@
+@auth
+
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 <h3>Tambah Companies</h3>
 <form action="{{ url('prosesTambahEmployees')}}" method="post" enctype="multipart/form-data">
@@ -24,3 +26,10 @@
             <button type="submit" class="btn btn-danger" value="Tambah">Simpan</button>
      </div>
 </form>  
+
+@endauth
+	
+
+@guest 
+Anda harus login
+@endguest 
