@@ -1,3 +1,4 @@
+@auth
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <h3>Edit Company</h3>
         <form action="{{ url('updateCompanyProses')}}" method="POST" enctype="multipart/form-data">
@@ -21,3 +22,10 @@
             </div>
         </form>
     @endforeach 
+    
+    @endauth
+	
+
+@guest 
+Anda harus login
+@endguest 
