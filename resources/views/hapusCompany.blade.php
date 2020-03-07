@@ -1,3 +1,4 @@
+@auth 
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <h3>Hapus Company</h3>
         <form action="{{ url('prosesHapusCompany')}}" method="POST">
@@ -14,3 +15,10 @@
             </div>
         </form>
     @endforeach 
+    
+    @endauth
+	
+
+@guest 
+Anda harus login
+@endguest 
